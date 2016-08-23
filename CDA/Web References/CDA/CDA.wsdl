@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="http://xmlns.oracle.com/orawsv/WS_RO/CDA" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CDA" targetNamespace="http://xmlns.oracle.com/orawsv/WS_RO/CDA" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/orawsv/WS_RO/CDA">
+      <xsd:element name="XMLInput">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="P_NADMI-NUMBER-IN" type="xsd:double" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="XMLOutput">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="S-HTMLInput">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="RETURN">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="HTMLOutput">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ASMXInput">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="P_NADMI-NUMBER-IN" type="xsd:double" />
+            <xsd:element name="P_CDA_DOCUMENT-XMLTYPE-OUT">
+              <xsd:complexType />
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ASMXOutput">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="P_CDA_DOCUMENT">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </types>
+  <message name="XMLInputMessage">
+    <part name="parameters" element="tns:XMLInput" />
+  </message>
+  <message name="XMLOutputMessage">
+    <part name="parameters" element="tns:XMLOutput" />
+  </message>
+  <message name="HTMLInputMessage">
+    <part name="parameters" element="tns:S-HTMLInput" />
+  </message>
+  <message name="HTMLOutputMessage">
+    <part name="parameters" element="tns:HTMLOutput" />
+  </message>
+  <message name="ASMXInputMessage">
+    <part name="parameters" element="tns:ASMXInput" />
+  </message>
+  <message name="ASMXOutputMessage">
+    <part name="parameters" element="tns:ASMXOutput" />
+  </message>
+  <portType name="CDAPortType">
+    <operation name="XML">
+      <input message="tns:XMLInputMessage" />
+      <output message="tns:XMLOutputMessage" />
+    </operation>
+    <operation name="HTML">
+      <input message="tns:HTMLInputMessage" />
+      <output message="tns:HTMLOutputMessage" />
+    </operation>
+    <operation name="ASMX">
+      <input message="tns:ASMXInputMessage" />
+      <output message="tns:ASMXOutputMessage" />
+    </operation>
+  </portType>
+  <binding name="CDABinding" type="tns:CDAPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="XML">
+      <soap:operation soapAction="XML" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="HTML">
+      <soap:operation soapAction="HTML" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="ASMX">
+      <soap:operation soapAction="ASMX" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+  </binding>
+  <service name="CDAService">
+    <documentation>Oracle Web Service</documentation>
+    <port name="CDAPort" binding="tns:CDABinding">
+      <soap:address location="httpS://bertoaldo.valme.net:1443/orawsv/WS_RO/CDA" />
+    </port>
+  </service>
+</definitions>

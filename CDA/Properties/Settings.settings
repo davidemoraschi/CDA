@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CDA.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CDA_CDA_CDAService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">httpS://bertoaldo.valme.net:1443/orawsv/WS_RO/CDA</Value>
+    </Setting>
+    <Setting Name="CDA_PKG_WS_CMBD_PKG_WS_CMBDService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">httpS://bertoaldo.valme.net:1443/orawsv/WS_RO/PKG_WS_CMBD</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

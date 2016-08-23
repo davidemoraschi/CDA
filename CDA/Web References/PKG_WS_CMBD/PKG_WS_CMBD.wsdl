@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="http://xmlns.oracle.com/orawsv/WS_RO/PKG_WS_CMBD" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PKG_WS_CMBD" targetNamespace="http://xmlns.oracle.com/orawsv/WS_RO/PKG_WS_CMBD" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/orawsv/WS_RO/PKG_WS_CMBD">
+      <xsd:element name="WS005_EPISODIO_POR_NADMIInput">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="P_RESULTADO-XMLTYPE-OUT">
+              <xsd:complexType />
+            </xsd:element>
+            <xsd:element name="P_QUIENERES-VARCHAR2-IN" type="xsd:string" />
+            <xsd:element name="P_NADMI-NUMBER-IN" type="xsd:double" />
+            <xsd:element name="P_CAMPOS-VARCHAR2-OUT">
+              <xsd:complexType />
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="WS005_EPISODIO_POR_NADMIOutput">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="P_RESULTADO">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="P_CAMPOS" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="WS004_EPISODIO_POR_NEPISInput">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="P_RESULTADO-XMLTYPE-OUT">
+              <xsd:complexType />
+            </xsd:element>
+            <xsd:element name="P_QUIENERES-VARCHAR2-IN" type="xsd:string" />
+            <xsd:element name="P_NEPIS-NUMBER-IN" type="xsd:double" />
+            <xsd:element name="P_CAMPOS-VARCHAR2-OUT">
+              <xsd:complexType />
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="WS004_EPISODIO_POR_NEPISOutput">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="P_RESULTADO">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="P_CAMPOS" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="WS003_EPISODIOS_POR_NDNIInput">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="P_RESULTADO-XMLTYPE-OUT">
+              <xsd:complexType />
+            </xsd:element>
+            <xsd:element name="P_QUIENERES-VARCHAR2-IN" type="xsd:string" />
+            <xsd:element name="P_NDNI-VARCHAR2-IN" type="xsd:string" />
+            <xsd:element name="P_CAMPOS-VARCHAR2-OUT">
+              <xsd:complexType />
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="WS003_EPISODIOS_POR_NDNIOutput">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="P_RESULTADO">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="P_CAMPOS" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="WS002_EPISODIOS_POR_NHISTInput">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="P_RESULTADO-XMLTYPE-OUT">
+              <xsd:complexType />
+            </xsd:element>
+            <xsd:element name="P_QUIENERES-VARCHAR2-IN" type="xsd:string" />
+            <xsd:element name="P_NHIST-VARCHAR2-IN" type="xsd:string" />
+            <xsd:element name="P_CAMPOS-VARCHAR2-OUT">
+              <xsd:complexType />
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="WS002_EPISODIOS_POR_NHISTOutput">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="P_RESULTADO">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="P_CAMPOS" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="WS001_EPISODIOS_POR_NUHSAInput">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="P_RESULTADO-XMLTYPE-OUT">
+              <xsd:complexType />
+            </xsd:element>
+            <xsd:element name="P_QUIENERES-VARCHAR2-IN" type="xsd:string" />
+            <xsd:element name="P_NUHSA-VARCHAR2-IN" type="xsd:string" />
+            <xsd:element name="P_CAMPOS-VARCHAR2-OUT">
+              <xsd:complexType />
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="WS001_EPISODIOS_POR_NUHSAOutput">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="P_RESULTADO">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="P_CAMPOS" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="WRITE_LOPDInput">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="P_RESULTADO-XMLTYPE-IN">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="P_QUIENERES-VARCHAR2-IN" type="xsd:string" />
+            <xsd:element name="P_INPUT-VARCHAR2-IN" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="WRITE_LOPDOutput">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="START_UPInput">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="P_QUIENERES-VARCHAR2-IN" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="START_UPOutput">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </types>
+  <message name="WS005_EPISODIO_POR_NADMIInputMessage">
+    <part name="parameters" element="tns:WS005_EPISODIO_POR_NADMIInput" />
+  </message>
+  <message name="WS005_EPISODIO_POR_NADMIOutputMessage">
+    <part name="parameters" element="tns:WS005_EPISODIO_POR_NADMIOutput" />
+  </message>
+  <message name="WS004_EPISODIO_POR_NEPISInputMessage">
+    <part name="parameters" element="tns:WS004_EPISODIO_POR_NEPISInput" />
+  </message>
+  <message name="WS004_EPISODIO_POR_NEPISOutputMessage">
+    <part name="parameters" element="tns:WS004_EPISODIO_POR_NEPISOutput" />
+  </message>
+  <message name="WS003_EPISODIOS_POR_NDNIInputMessage">
+    <part name="parameters" element="tns:WS003_EPISODIOS_POR_NDNIInput" />
+  </message>
+  <message name="WS003_EPISODIOS_POR_NDNIOutputMessage">
+    <part name="parameters" element="tns:WS003_EPISODIOS_POR_NDNIOutput" />
+  </message>
+  <message name="WS002_EPISODIOS_POR_NHISTInputMessage">
+    <part name="parameters" element="tns:WS002_EPISODIOS_POR_NHISTInput" />
+  </message>
+  <message name="WS002_EPISODIOS_POR_NHISTOutputMessage">
+    <part name="parameters" element="tns:WS002_EPISODIOS_POR_NHISTOutput" />
+  </message>
+  <message name="WS001_EPISODIOS_POR_NUHSAInputMessage">
+    <part name="parameters" element="tns:WS001_EPISODIOS_POR_NUHSAInput" />
+  </message>
+  <message name="WS001_EPISODIOS_POR_NUHSAOutputMessage">
+    <part name="parameters" element="tns:WS001_EPISODIOS_POR_NUHSAOutput" />
+  </message>
+  <message name="WRITE_LOPDInputMessage">
+    <part name="parameters" element="tns:WRITE_LOPDInput" />
+  </message>
+  <message name="WRITE_LOPDOutputMessage">
+    <part name="parameters" element="tns:WRITE_LOPDOutput" />
+  </message>
+  <message name="START_UPInputMessage">
+    <part name="parameters" element="tns:START_UPInput" />
+  </message>
+  <message name="START_UPOutputMessage">
+    <part name="parameters" element="tns:START_UPOutput" />
+  </message>
+  <portType name="PKG_WS_CMBDPortType">
+    <operation name="WS005_EPISODIO_POR_NADMI">
+      <input message="tns:WS005_EPISODIO_POR_NADMIInputMessage" />
+      <output message="tns:WS005_EPISODIO_POR_NADMIOutputMessage" />
+    </operation>
+    <operation name="WS004_EPISODIO_POR_NEPIS">
+      <input message="tns:WS004_EPISODIO_POR_NEPISInputMessage" />
+      <output message="tns:WS004_EPISODIO_POR_NEPISOutputMessage" />
+    </operation>
+    <operation name="WS003_EPISODIOS_POR_NDNI">
+      <input message="tns:WS003_EPISODIOS_POR_NDNIInputMessage" />
+      <output message="tns:WS003_EPISODIOS_POR_NDNIOutputMessage" />
+    </operation>
+    <operation name="WS002_EPISODIOS_POR_NHIST">
+      <input message="tns:WS002_EPISODIOS_POR_NHISTInputMessage" />
+      <output message="tns:WS002_EPISODIOS_POR_NHISTOutputMessage" />
+    </operation>
+    <operation name="WS001_EPISODIOS_POR_NUHSA">
+      <input message="tns:WS001_EPISODIOS_POR_NUHSAInputMessage" />
+      <output message="tns:WS001_EPISODIOS_POR_NUHSAOutputMessage" />
+    </operation>
+    <operation name="WRITE_LOPD">
+      <input message="tns:WRITE_LOPDInputMessage" />
+      <output message="tns:WRITE_LOPDOutputMessage" />
+    </operation>
+    <operation name="START_UP">
+      <input message="tns:START_UPInputMessage" />
+      <output message="tns:START_UPOutputMessage" />
+    </operation>
+  </portType>
+  <binding name="PKG_WS_CMBDBinding" type="tns:PKG_WS_CMBDPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="WS005_EPISODIO_POR_NADMI">
+      <soap:operation soapAction="WS005_EPISODIO_POR_NADMI" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="WS004_EPISODIO_POR_NEPIS">
+      <soap:operation soapAction="WS004_EPISODIO_POR_NEPIS" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="WS003_EPISODIOS_POR_NDNI">
+      <soap:operation soapAction="WS003_EPISODIOS_POR_NDNI" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="WS002_EPISODIOS_POR_NHIST">
+      <soap:operation soapAction="WS002_EPISODIOS_POR_NHIST" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="WS001_EPISODIOS_POR_NUHSA">
+      <soap:operation soapAction="WS001_EPISODIOS_POR_NUHSA" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="WRITE_LOPD">
+      <soap:operation soapAction="WRITE_LOPD" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="START_UP">
+      <soap:operation soapAction="START_UP" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+  </binding>
+  <service name="PKG_WS_CMBDService">
+    <documentation>Oracle Web Service</documentation>
+    <port name="PKG_WS_CMBDPort" binding="tns:PKG_WS_CMBDBinding">
+      <soap:address location="httpS://bertoaldo.valme.net:1443/orawsv/WS_RO/PKG_WS_CMBD" />
+    </port>
+  </service>
+</definitions>

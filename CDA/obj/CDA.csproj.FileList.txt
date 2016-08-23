@@ -1,0 +1,9 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CDA.Properties.Resources.resources
+obj\Debug\CDA.csproj.GenerateResource.Cache
+bin\Debug\CDA.exe.config
+bin\Debug\CDA.exe
+bin\Debug\CDA.pdb
+obj\Debug\CDA.exe
+obj\Debug\CDA.pdb
+obj\Debug\CDA.frm_CDA.resources
